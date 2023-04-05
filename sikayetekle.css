@@ -1,0 +1,203 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image:linear-gradient(rgb(0, 0, 0),rgb(3, 23, 114));
+}
+
+.block {
+    text-align: center;
+    padding-top: 50px;
+    border-radius: 30px;
+    position: relative;
+    margin: 60px auto 0px;
+    width: 400px;
+    height: 150px;
+    background: linear-gradient(0deg, #000, rgb(10, 10, 126));
+    color:#fff;
+}
+
+    .block:before, .block:after {
+        border-radius: 30px;
+        content: '';
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        background: linear-gradient(25deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000);
+        background-size: 200%;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        z-index: -1;
+        animation: steam 20s linear infinite;
+    }
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.block:after {
+    filter: blur(10px);
+}
+
+.container {
+    color: rgb(0, 0, 0);
+    width: 60%;
+    height:60%;
+    top: 65%;
+    left: 50%;
+    background: linear-gradient(rgb(19, 191, 221),rgb(10, 23, 138));
+    border-radius: 10px;
+    min-width: 300px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%,-50%);
+}
+
+.avatar{
+    position:absolute;
+    width:10vw;
+    height:15vh;
+    margin-top:2%;
+    margin-left:40%;
+    border-radius:50%;
+}
+
+.isim {
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 34%;
+    font-size: 32px;
+}
+
+#newtask {
+    margin-top:25%;
+    position: relative;
+    padding: 30px 20px;
+}
+
+    #newtask input {
+        width: 75%;
+        height: 45px;
+        padding: 12px;
+        color: #111111;
+        font-weight: 500;
+        position: relative;
+        border-radius: 5px;
+        font-family: 'Poppins',sans-serif;
+        font-size: 15px;
+        border: 2px solid #d1d3d4;
+    }
+
+        #newtask input:focus {
+            outline: none;
+            border-color: #0d75ec;
+        }
+
+    #newtask button {
+        position: relative;
+        float: right;
+        font-weight: 500;
+        font-size: 16px;
+        background-color: #0d75ec;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+        outline: none;
+        width: 20%;
+        height: 45px;
+        border-radius: 5px;
+        font-family: 'Poppins',sans-serif;
+    }
+
+#tasks {
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    padding: 5px 20px;
+}
+
+.task {
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    height: 10%;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+
+    .task span {
+        font-family: 'Poppins',sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .task button {
+        background-color: #0a2ea4;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        height: 100%;
+        width: 40px;
+        border-radius: 5px;
+    }
+
+    .yeni{
+       text-align:center;
+        font-size:25px;
+        margin-top:4%;
+        margin-bottom:2%;
+    }
+    hr{
+        height:3px;
+        background-color:#252525;
+    }
+
+    @media only screen and (max-width: 1400px) {
+       .avatar{
+        margin-left: 8%;
+        width:13vw;
+        margin-top:5%;
+        height:13vh;
+       }
+       .isim{
+        margin-left:35% ;
+        margin-top:10%;
+        font-size:32px;
+       } 
+
+      }
+      @media only screen and (max-width: 700px) {
+        .avatar{
+         margin-left: 12%;
+         width:8vw;
+         height:8vh;
+        }
+        .isim{
+         margin-left:35% ;
+         margin-top:15% ;
+         font-size:12px ;
+        } 
+ 
+       }

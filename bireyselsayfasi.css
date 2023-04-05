@@ -1,0 +1,300 @@
+*{
+
+
+    margin: 0;
+    padding: 0;
+    
+  }
+   .background{
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         z-index: -1;
+      }
+  #wrapper
+    {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    }
+    label
+    {
+    cursor: pointer;
+      outline: none;
+    }
+  
+  .menu
+    {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgb(0, 0, 0),#10075e);
+    width: 240px;
+    height: 100%;
+    transform: translate3d(-240px, 0, 0);
+    transition: transform 0.35s;
+    font-family: Alfa Slab One;
+    font-size: 44px;
+    }
+  
+    label.menu-toggle  
+    
+    {
+      position: absolute;    
+      right: -60px;
+      width: 60px;
+      height: 60px;
+      line-height: 0px;    
+      display: block;
+      padding: 0;
+      text-indent: -9999px;
+      background: rgba(255, 255, 255, 0.274) url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50% / 25px 25px no-repeat;
+      border-radius:12px ;
+      
+    }
+  
+    .set{
+      font-size: 24px;
+    }
+  
+  .set:hover{
+    text-decoration: none;
+    background: -webkit-linear-gradient(rgb(52, 4, 83), rgb(140, 103, 199));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+   
+  
+  
+    ul
+      li
+        > label
+     {     background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-b-128.png) 95% 50% / 16px 16px no-repeat;
+     }  
+    
+     a, label{
+          display: block;
+          text-align: center;
+          padding: 0 20px;
+          line-height: 60px;
+          text-decoration: none;
+          color: rgb(255, 255, 255);  
+          font-size: xx-large;
+          margin-bottom: 40px;
+        }
+
+  /* inputlari saklamak icin*/          
+  .menu-checkbox
+    {display: none;
+    }
+  /* nav iconunu saklamak icin */    
+  .menu .menu label.menu-toggle
+   { background: none;
+  }  
+  /* secilmis menuyu golgeyemak fadelemek */    
+  .menu-checkbox:checked + .menu
+    {transform: translate3d(0, 0, 0);
+    }
+      
+  p
+    {margin-bottom: 15px;
+    }
+  #info
+    {display: table;
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;}
+    #info-content{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 12px;
+    }
+      .slogan{      
+        background: -webkit-linear-gradient(rgb(3, 255, 255), rgb(12, 168, 216));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        font-family: Audiowide;
+        font-size: 50px;
+        padding: 20px;
+        margin-top: -375px;
+        display: block;
+        text-indent: -8%;
+     
+      }
+    
+      .topbar{
+        font-family: Alfa Slab One ;
+        font-size: 45px;
+        background-image: linear-gradient(rgb(30, 23, 85),#000000);
+        padding:50px;
+        text-indent: 34%;   
+      }
+  .toptext{
+    margin-left: 7%;
+    background: -webkit-linear-gradient(rgb(4, 5, 85), rgb(96, 255, 247));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+  }
+  
+  #sign{
+          
+    margin-left: 86%;
+    background: -webkit-linear-gradient(rgb(3, 255, 255), rgb(12, 168, 216));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+      .scale{
+        text-align: center;
+        font-size: xx-large;
+        color: #fff;
+        background-image: linear-gradient(rgb(0, 0, 0),#10075e);
+        width: 450px;
+        height: 100vh;
+        float: right;
+        padding-bottom: 85px;
+        padding-top:20px;
+        
+      }
+      
+      .scalecards{
+        margin-left: 30px;
+        margin-right: 4px;
+        margin-bottom: 50px;
+        width: 20vw;
+        height: 40vh;
+        float: left;
+        padding-right:15px;
+        text-align: center;
+        border-radius: 80px;
+        color: rgb(255, 255, 255);
+        font-size: 22px;
+        box-shadow: rgba(255, 255, 255, 0.808) 0px 0px 20px;
+       
+      }
+   .degerlendirmeler{
+       position: absolute;
+       z-index: 6;
+       margin-left: 4%;
+    }
+   
+  
+    .setimage{
+      width:20%;
+      height:20%;
+      border-radius:100px;
+      margin: 50px 5px 5px -250px;
+    
+    }
+    .setimage:hover{
+      box-shadow: #fff 0px 0px 70px;
+      width: 25%;
+      height: 25%;
+      margin: 45px 5px 5px -250px;
+      transition: all   1s ease-in;
+    }
+   #scalecard1{
+    background: -webkit-linear-gradient(rgb(4, 5, 85),rgb(5, 99, 94));
+      z-index: 5;
+      transition: all 0.5s ;  
+      position: absolute;
+      margin-top: 3%;
+    }
+    #scalecard2{
+      background: -webkit-linear-gradient(rgb(5, 99, 94),rgb(4, 5, 85) );
+      z-index: 5;
+      transition: all 0.5s ;
+      position: absolute;
+      margin: 470px 4px 0px  30px;
+    }
+      
+    #scalecard3{
+      background: -webkit-linear-gradient(rgb(4, 5, 85),rgb(5, 99, 94));
+      z-index: -1;
+      position: absolute;
+      transition: all 0.5s ;
+      opacity: 0;
+      margin-top: 3%;
+  
+    }
+     
+    #scalecard4{
+      background: -webkit-linear-gradient(rgb(5, 99, 94),rgb(4, 5, 85) );
+      z-index: -1;
+      position: absolute;
+      margin: 470px 4px 0px  30px;
+      transition: all 0.5s ;
+      opacity: 0;
+    }
+  
+  .tikla1{
+    position: absolute;
+    top: 1230px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -75px;
+    background-color: rgb(52, 18, 133);
+    z-index: 7;
+    border-radius: 50px;
+    box-shadow: rgba(22, 133, 197, 0.808) 0px 0px 20px;
+    color: white;
+  }
+  
+  .tikla1:hover{
+    background-color: rgb(17, 176, 224);
+  }
+  
+  .tikla2{
+    color: #fff;
+    position: absolute;
+    top: 1230px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(52, 18, 133);
+    z-index: 7;
+    border-radius: 50px;
+    box-shadow: rgba(22, 133, 197, 0.808) 0px 0px 20px;
+  }
+  .tikla2:hover{
+    background-color: rgb(15, 214, 228);
+  }
+  
+  .container{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #000000bb;
+    padding: 150px 0px;
+    width: 40vw;
+    margin-top: 20%;
+    margin-left:25% ;
+    position: absolute;
+    border: #fff solid 2px;
+    font: 10px Audiowide  ;
+    transition: all 5s;
+    border-radius: 15px;
+  }
+  .txtislem{
+    margin-left: 15%;
+    font-size: 650%;
+    background: -webkit-linear-gradient(left, rgb(2, 226, 255) , rgb(7, 148, 184));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+   
+  .container > button > a {
+    text-decoration: none;
+    color:  white ;
+  }
+  
+  #baslik{
+    position: absolute;
+    margin-top: -18%;
+    margin-left:35%;
+  }
+  

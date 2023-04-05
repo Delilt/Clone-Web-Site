@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="bireyselgiris.css">
+        
+    <title>BIREYSEL GIRIS </title>
+  </head>
+  <body>
+     
+    
+	
+
+	<div class="section">
+		<div class="container">
+			<div class="row full-height justify-content-center">
+				<div class="col-12 text-center align-self-center py-5">
+					<div class="section pb-5 pt-5 pt-sm-2 text-center">
+						<h6 class="mb-0 pb-3"><span>Giris yap </span><span>Kayit ol</span></h6>
+			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+			          	<label for="reg-log"> </label>
+                  
+						<div class="card-3d-wrap mx-auto">
+							<div class="card-3d-wrapper">
+								<div class="card-front">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">GIRIS YAP</h4>
+											<div class="form-group">
+												<input type="email" name="logemail" class="form-style" placeholder=" KULLANICI ADI " id="logemail" autocomplete="off" required>
+											
+											</div>	
+											<div class="form-group mt-2">
+												<input type="password" name="logpass" class="form-style" placeholder="SIFRE" id="logpass" autocomplete="off" required>
+												
+											</div>
+											<a href="bireyselsayfasi.html" class="btn mt-4">GIRIS YAP</a>
+                            				
+				      					</div>
+			      					</div>
+			      				</div>
+								<div class="card-back">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">KAYIT OL</h4>
+											<div class="form-group">
+												<input type="text" name="logname" class="form-style" placeholder="KULLANICI ADI" id="logname" autocomplete="off" required>
+												<i class="input-icon uil uil-user"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="password" name="logpass" class="form-style" placeholder="SIFRE" id="logpassk" autocomplete="off" required>
+												<i class="input-icon uil uil-at"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="password" name="logpass" class="form-style" placeholder="SIFRE DOGRULAMA" id="logpassc" autocomplete="off" required>
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<a href="bireyselgiris.html" class="btn mt-4">KAYIT OL</a>
+				      					</div>
+			      					</div>
+			      				</div>
+			      			</div>
+			      		</div>
+			      	</div>
+		      	</div>
+	      	</div>
+	    </div>
+	</div>
+	<script>
+		function validateLogin() {
+		  // Get the values of the email and password fields
+		  var name = document.getElementById("logname").value;
+		  var password = document.getElementById("logpassk").value;
+		  var passwordconfirm = document.getElementById("logpassc").value;
+		
+		  // Get the stored email and password from the local storage
+		  var storedName = localStorage.getItem("name");
+		  var storedPassword = localStorage.getItem("password");
+		
+		  // Compare the email and password to the stored email and password
+		  if (name === storedName && password === storedPassword) {
+			// If the email and password match, redirect the user to the bireyselsayfasi.html page
+			window.location.href = "bireyselsayfasi.html";
+		  } else {
+			// If the email and password do not match, display an error message
+			alert("Email veya sifre hatali!");
+		  }
+		
+		  // Prevent the form from submitting
+		  return false;
+		}
+		
+		function register() {
+		  // Get the values of the name, email, and password fields
+		  var name = document.getElementById("logname").value;
+		  var password = document.getElementById("logpassk").value;
+          var password2 = document.getElementById("logpassc").value;
+          
+            // Check if the password and confirm password fields match
+            if (password === password2) {
+              // If the passwords match, store the name, email, and password in the local storage
+              localStorage.setItem("name", name);
+              localStorage.setItem("password", password);
+          
+              // Display a success message
+              alert("Basariyla kayit oldunuz!");
+            } else {
+              // If the passwords do not match, display an error message
+              alert("Sifreler uyusmuyor!");
+            }
+          }
+          </script>
+
+    <script src="bireyselgiris.html"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+  </body>
+</html>

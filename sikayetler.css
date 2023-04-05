@@ -1,0 +1,256 @@
+body{
+    background: linear-gradient(rgb(63, 59, 59),rgb(0, 0, 0));
+    height: 100vh;
+    width: 100vw;
+  }
+  p{
+    color: rgb(212, 197, 197);
+  }
+  h1{
+    font-size: 54px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-family: 'Odibee Sans', cursive;
+    margin-bottom: 0;
+  }
+  #ates{
+    background: linear-gradient(rgb(47, 189, 245),rgb(255, 10, 10));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-right: 15px;
+  }
+  #sikayetlerim {
+    background: linear-gradient(rgb(47, 189, 245),rgb(255, 10, 10));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Odibee Sans', cursive;
+  }
+  .sayi{
+    background: linear-gradient(rgb(246, 250, 2),rgb(9, 242, 250));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Odibee Sans', cursive;
+  }
+  
+  .carousel-wrapper {
+    width: 78.14vw;
+    height: 72.26vh;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    display: block;
+    margin: 50px auto ;
+    border: 2px solid black;
+    border-radius:18px ;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    width: 72.9vw;
+    height: 67.02vh;
+  }
+  .arrow{
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+  }
+  .arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+    transition: all 0.5s ease-in-out;
+  
+  }
+  .arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  [id^= "item"] {
+    display: none;
+  }
+  .item-1 {
+    z-index: 2;
+    opacity: 0.5;
+    background: linear-gradient(rgb(0, 0, 0),rgb(7, 21, 145));
+    border-radius: 15px;
+    width: 72.9vw;
+    height: 67.02vh;
+    transition: all 0.5s ease-in-out;
+  }
+  .item-2 {
+    background: linear-gradient(rgb(0, 0, 0),rgb(7, 21, 145));
+    border-radius: 15px;
+    width: 72.9vw;
+    height: 67.02vh;
+    transition: all 0.5s ease-in-out;
+  }
+  .item-3 {
+    background: linear-gradient(rgb(0, 0, 0),rgb(7, 21, 145));
+    border-radius: 15px;
+    width: 72.9vw;
+    height: 67.02vh;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  *:target ~ .item-1{
+    opacity: 0;
+  }
+  #item-1:target ~ .item-1 {
+    opacity: 1;
+  
+  }
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  } 
+
+  .sikayet1{
+    background: linear-gradient(rgb(63, 59, 59),rgb(0, 0, 0));
+    width: 70vw;
+    height: 63vh;
+    margin-top: 2%;
+    margin-left: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 50px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .sikayet2{
+    background: linear-gradient(rgb(63, 59, 59),rgb(0, 0, 0));
+    width: 70vw;
+    height: 63vh;
+    margin-left: 30px;
+    margin-top: 2%;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 50px;
+    transition: all 0.5s ease-in-out;
+  }
+  .sikayet3{
+    background: linear-gradient(rgb(63, 59, 59),rgb(0, 0, 0));
+    width: 70vw;
+    height: 63vh;
+    margin-top: 2%;
+    margin-left: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 50px;
+    transition: all 0.5s ease-in-out;
+    
+  }
+  
+
+
+  .avatar{
+    width: 16vw;
+    height: 20vh;
+    border-radius:30%;
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+    padding-right:5px;
+  }
+  
+
+  ol{
+    margin-top: 9%; 
+    font-size: 26px;
+    color: gold;
+    position: absolute;
+  }
+  
+.delil{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ad{
+  text-decoration: underline;
+  margin-left: 3%;
+}
+
+#firmaad1{
+  position: absolute;
+   margin-left: 25%;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 70px;
+  background: linear-gradient(rgb(2, 213, 250),rgb(10, 116, 143));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: 'Odibee Sans', cursive;
+}
+#firmaad2{
+  position: absolute;
+   margin-left: 25%;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 70px;
+  background: linear-gradient(rgb(250, 10, 2),rgb(250, 9, 9));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: 'Odibee Sans', cursive;
+}
+#firmaad3{
+  position: absolute;
+   margin-left: 25%;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 70px;
+  background: linear-gradient(rgb(99, 91, 91),rgb(245, 0, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: 'Odibee Sans', cursive;
+}
+  
+  @media only screen and (max-width: 1400px) {
+    .sikayet1,.sikayet2,.sikayet3 {
+      overflow: scroll;
+       margin-left: -30px;
+    }
+  }
+  
+  @media only screen and (max-height: 800px) {
+    .sikayet1,.sikayet2,.sikayet3 {
+      overflow: scroll;
+     
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    ol {
+      margin-left: 10%;
+      margin-top: -5%;
+      font-size: 16px;
+     
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    
+    .item-1,.item-2,.item-3{
+      width: 58vw;
+    }
+  }
+  /*@media only screen and (max-width: 500px) {
+    
+    .sikayet-1,.sikayet-2,.sikayet-3{
+      margin-left: -100px;
+    }
+  }*/

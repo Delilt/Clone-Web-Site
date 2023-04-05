@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa Slab One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="anasayfa.css">
+    
+  <link rel="stylesheet" href="anasayfa.js">
+    
+    <title>ANASAYFA</title>
+  </head>
+  <body>
+    <style>
+      form {
+        width:57%;
+        margin-left:6%;
+      }
+      
+      #search-input {
+        width: 77%;
+        background-color: transparent;
+        border: 2px solid white;
+        padding: 10px;
+        border-radius: 4px;
+        font-size: 14px;
+        color: white;
+      }   
+      #ara{
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        margin-top: -3%;
+        margin-left: 62%;
+      }
+
+      i{
+        color: white;
+      }
+    </style>
+
+      <div class="topbar"> 
+      <p class="toptext">DYSOLUTION</p>   
+      
+      
+      <form>
+        <label for="search"></label>
+        <input type="text" id="search" placeholder="ARAMA YAPINIZ ... " name="search" style="height:50px; background-color: transparent; color: white; border-radius: 5px; border: 2px solid white; margin-left: 40%;font-size: 12px; width: 60%; text-align: center;">
+        <button type="submit" style="background-color: transparent; position: absolute; margin-left: 2%; border: none; margin-top: 0.5%;"><i class="fa fa-search" ></i></button>
+      </form>
+      
+      <script>
+        const form = document.querySelector('form');
+        const searchInput = document.querySelector('#search');
+        const targetElementId = 'your-target-element-id';  // Replace with the ID of the element you want to search on your website
+      
+        form.addEventListener('submit', (event) => {
+          event.preventDefault();  // Prevent the form from submitting
+      
+          const searchQuery = searchInput.value;
+          const targetElement = document.querySelector(`#${targetElementId}`);
+      
+          // You can now search within the target element using the search query
+        });
+      </script>
+
+
+
+    </div>
+
+    <div class="scale">
+      <h3 class="degerlendirmeler">DEGERLENDIRMELER</h3>
+      <input type="button" value="1" class="tikla1" onclick="clk1func()">
+      <input type="button" value="2" class="tikla2" onclick="clk2func()" >
+      <div id="scalecard1" class="scalecards"><img src="images/merme.jpg" alt="foto" class="setimage">
+        <h3 id="baslik">Merve Kınık</h3>
+        <p>Hem şık hem de basit tasarımının yanında insanların düşüncelerini özgürce dile getirebildiği açık ve anlaşılır bir platform olmuş.
+           5 Yıldızı hak eden bir site.
+          </p> 
+          </div>
+
+
+      <div id="scalecard2" class="scalecards"><img src="images/enez.jpg" alt="foto" class="setimage">
+        <h3 id="baslik">Enes Demirkol</h3>
+        <p>Gerçektende bazı şikaylerime çözüm buldum. Kimi noktalarda toplum düzenin ve bireylerin haklarını tanımasında oldukça yardımcı bir site.
+           En önemlisi muhattap firma ile birebir konuşma fırsatımızın olması. 
+          </p> 
+          </div>
+      
+           <div id="scalecard3" class="scalecards"><img src="images/reym.jpg" alt="foto" class="setimage">
+        <h3 id="baslik">Rahim Kurt</h3>
+        <p>DYSOLUTION isminin hakkını veren bir site gerçekten. 
+          şikayetçi olduğum firma ile iletişime geçebilmem için ellerinden geleni yaptılar ve her aşamada yardımcı oldular.
+        </p> 
+        </div>
+     
+        <div id="scalecard4" class="scalecards"><img src="images/selo.jpg" alt="foto" class="setimage">
+        <h3 id="baslik">Selahattin Bazyel</h3>
+        <p>Sonunda şikayetvar gibi adımları uzatıp uzatıp edeceğimiz şikayeti unutturmayan, kullanımı basit bir site yapmışlar.
+           Sitenizi çok beğendim ama bazı noktalarda renkler cok fazla kapalı olmuş , insanın içi daralıyor. Tam bir şikayet sayfası. 
+        </p>
+      </div>
+       
+    </div>
+    
+    <div>
+
+
+
+    <div id="wrapper">
+      <div id="info">
+        <div id="info-content">
+          <h1 class="slogan">Her degisim <strong>SIKAYET</strong> ile baslar</h1>
+        </div>
+      </div>
+    
+      <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+      <div class="menu">
+        <label class="menu-toggle" for="menu"><span>Toggle</span></label>
+        <ul>
+          <li> 
+            <a href="sikayetler.html" target="_blank" class="set">SIKAYETLER</a>       
+          </li>
+          <li>
+            <a href="kurumsalgiris.html" target="_blank" class="set">KURUMSAL G.</a>
+          </li>      
+          <li>
+            <a href="bireyselgiris.html" target="_blank" class="set">BIREYSEL G.</a>
+          </li>
+         
+          <li>
+            <a href="hakkimizdabos.html" target="_blank" class="set">HAKKIMIZDA</a>
+          </li>
+
+        </ul>
+      </div>
+    </div><!-- #wrapper -->
+    <img src="bgnew.jpg" alt="res" class="background">
+    </div>
+<div class="container">
+      <h1 class="txtislem">HESAP ISLEMLERI</h1>
+      <button type="button" class="serbestgit" ><a href="bireyselgiris.html" target="_blank" >Bireysel Kullanici</a></button>
+      <button type="button" class="kurumsalgit" ><a href="kurumsalgiris.html" target="_blank" >kurumsal Kullanici</a></button>
+</div>
+
+
+   
+    <script src="js/jquery-3.3.1.min.js"></script>    
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+    <script src="anasayfa.js"></script>
+
+  </body>
+</html>
